@@ -1,8 +1,8 @@
 class Pds4Validate < Formula
   desc "PDS4 Label Validation Tool"
   homepage "https://pds.nasa.gov/pds4/software/validate/"
-  url "ftp://pds.nasa.gov/pub/toplevel/2010/preparation/validate-1.12.0-bin.zip"
-  sha256 "ffee5063ebfbbdbf54416b1cc0f4816d0a1429ed4ca0ab50709e0ff92d4fa2c7"
+  url "ftp://pds.nasa.gov/pub/toplevel/2010/preparation/validate-1.13.0-bin.zip"
+  sha256 "38f9a56a60d9047ab876bf3b1ae67a2866053ed8230e9a902ef72c5df635310b"
 
   depends_on :java => "1.7+"
 
@@ -17,6 +17,6 @@ class Pds4Validate < Formula
   end
 
   test do
-    system "#{bin}/validate -h"
+    system "export JAVA_HOME=`/usr/libexec/java_home` && #{bin}/validate -h"
   end
 end
