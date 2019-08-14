@@ -1,8 +1,8 @@
 class Pds4Validate < Formula
   desc "PDS4 Label Validation Tool"
   homepage "https://pds-engineering.jpl.nasa.gov/development/pds4/current/preparation/validate/index.html"
-  url "https://pds.nasa.gov/software/pds4/preparation/validate-1.15.0-bin.tar.gz"
-  sha256 "f2961c168e4367c7b3da77a25eaa7d2e88619181c4f8ad746d05eee32b4d4d6e"
+  url "https://pds.nasa.gov/software/pds4/preparation/validate-1.14.0-bin.tar.gz"
+  sha256 "96a0085425bfdf12fd32dc752b8549181419df0c068e807320cdf5a91e569295"
 
   depends_on :java => "1.8+"
 
